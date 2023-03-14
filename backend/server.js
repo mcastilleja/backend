@@ -13,6 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 app.use('/api/tareas', require('./routes/tareasRoutes'))
+app.use('/api/user', require('./routes/usersRoutes'))
 app.use(errorHandle)
 
 app.listen(port, ( ) => console.log(`Server start on port ${port}`))
