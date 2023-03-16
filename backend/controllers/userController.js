@@ -80,7 +80,7 @@ const registerUser = asyncHandler( async (req, res) => {
 })
 
 const getMisDatos = asyncHandler( async (req, res) => {
-    res.json({message: 'Mis Datos'})
+    res.json(req.user)
 })
 
 const generateToken = (id) => {
