@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const userShema = mongoose.Schema({
+const userSchema = mongoose.Schema({
     name : {
         type : String,
         require : [true, 'Por favor escribe un nombre']
@@ -18,4 +18,4 @@ const userShema = mongoose.Schema({
     timestamps : true
 })
 
-module.exports = mongoose.model('User', userShema)
+module.exports = mongoose.model('User', userSchema)
